@@ -18,7 +18,7 @@ var gameInterval = null
  */
 
 function checkCollision(rock) {
-    const top = positionToInteger(rock.style.top)
+    const top = positionToInteger(rock.style.top);
 // GAME_HEIGHT - 20 - 20 = 360px;
   if (top > 360) {
  
