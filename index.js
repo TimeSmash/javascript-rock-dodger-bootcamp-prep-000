@@ -31,8 +31,7 @@ function checkCollision(rock) {
     let collide2 = ((rockLeftEdge >= dodgerLeftEdge) && (rockRightEdge <= dodgerRightEdge));
     let collide3 = ((rockLeftEdge <= dodgerRightEdge) && (rockRightEdge >= dodgerRightEdge));
     
-    if ( collide1 || collide2 || collide3 
-    ) {
+    if ( collide1 || collide2 || collide3) {
       return true;
     }
   }
