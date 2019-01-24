@@ -22,10 +22,10 @@ function checkCollision(rock) {
 // GAME_HEIGHT - 20 - 20 = 360px;
   if (top > 360) {
  
-    const dodgerLeftEdge = positionToInteger(DODGER.style.left)
-    const dodgerRightEdge = positionToInteger((DODGER.style.left) + 40)
+     const dodgerLeftEdge = positionToInteger(DODGER.style.left)
+    const dodgerRightEdge = dodgerLeftEdge + 40;
     const rockLeftEdge = positionToInteger(rock.style.left)
-    const rockRightEdge = positionToInteger((rock.style.left) + 20);
+    const rockRightEdge = rockLeftEdge + 20;
 
     let collide1 = ((rockLeftEdge <= dodgerLeftEdge) && (rockRightEdge >= dodgerLeftEdge));
     let collide2 = ((rockLeftEdge >= dodgerLeftEdge) && (rockRightEdge <= dodgerRightEdge));
